@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en" class="scroll-smooth"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;The Mindset Makeover: Your Path to Viral Power!&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.jsdelivr.net/npm/chart.js"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Chosen Palette: Creator Glow --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Application Structure Plan: The SPA uses a single-page, vertical scrolling structure with a sticky top navigation for easy access to the three core thematic sections: 'Camera Confidence', 'No One Cares', and 'Your Why'. This structure was chosen because it mirrors the user's psychological journey from overcoming initial fear to building sustainable motivation, as laid out in the source document. Key interactions include interactive checklists, text inputs for reflection, and a dynamic Chart.js visualization for progress tracking. This transforms passive reading into an active, engaging experience, which is more effective for the target audience of creators. --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Visualization &amp; Content Choices:</p>
+<p class="p1"><span class="Apple-converted-space">        </span>- Report Info: 'Practice Makes Perfect' Log -&gt; Goal: Track daily practice -&gt; Viz/Method: Interactive HTML checklist -&gt; Interaction: User clicks to mark completion -&gt; Justification: Simple, direct feedback for daily habit building.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>- Report Info: Mindset Shift/Camera Hacks -&gt; Goal: Inform &amp; Reinforce -&gt; Viz/Method: Interactive HTML checklists/cards -&gt; Interaction: User clicks to check off items -&gt; Justification: Reinforces learning through physical interaction.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>- Report Info: 'Consistency Crew Tracker' -&gt; Goal: Visualize long-term progress -&gt; Viz/Method: Bar Chart -&gt; Interaction: User clicks a button to add a week of progress, updating the chart dynamically -&gt; Justification: Provides a powerful, motivating visual representation of accumulated effort, making the concept of exponential growth tangible. Library: Chart.js.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>- Report Info: Reflection Questions/Fill-in-the-blanks -&gt; Goal: Encourage self-reflection -&gt; Viz/Method: HTML text areas -&gt; Interaction: User types directly into the fields -&gt; Justification: Creates a personal, digital journal space within the app.</p>
+<p class="p1"><span class="Apple-converted-space">    </span>--&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Poppins', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #FFFBF5;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #4A4A4A;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.bg-cream { background-color: #FFFBF5; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.bg-peach { background-color: #FFEEE3; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.text-coral { color: #FF6B6B; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.bg-coral { background-color: #FF6B6B; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.border-coral { border-color: #FF6B6B; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.text-teal { color: #4ECDC4; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.bg-teal { background-color: #4ECDC4; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.accent-coral { accent-color: #FF6B6B; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.accent-teal { accent-color: #4ECDC4; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.chart-container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 600px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-left: auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-right: auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>height: 320px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-height: 400px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@media (min-width: 640px) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>.chart-container {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>height: 350px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.nav-link {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.nav-link:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #FF6B6B;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-2px);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.card {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.3s ease, box-shadow 0.3s ease;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.card:hover {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(-5px);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.interactive-checklist-item {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>transition: all 0.2s ease-in-out;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.interactive-checklist-item.completed {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-decoration: line-through;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #9CA3AF;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="bg-cream"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Header &amp; Navigation --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header class="bg-cream/80 backdrop-blur-lg sticky top-0 z-50 shadow-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;nav class="container mx-auto px-6 py-4 flex flex-col items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1 class="text-xl md:text-2xl font-bold text-coral mb-4"&gt;Fix your mindset&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 items-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#camera" class="nav-link font-semibold"&gt;📸 Camera Confidence&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#no-one-cares" class="nav-link font-semibold"&gt;🤫 No One Cares&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#why" class="nav-link font-semibold"&gt;🌟 Your Why&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;button id="mobile-menu-button" class="md:hidden text-2xl absolute top-4 right-6"&gt;☰&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="mobile-menu" class="hidden md:hidden flex-col items-center py-4 space-y-4 bg-cream"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#camera" class="nav-link font-semibold"&gt;📸 Camera Confidence&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#no-one-cares" class="nav-link font-semibold"&gt;🤫 No One Cares&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#why" class="nav-link font-semibold"&gt;🌟 Your Why&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;main class="container mx-auto px-6 py-8 md:py-16"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Hero Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section class="text-center mb-16 md:mb-24"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-4xl md:text-6xl font-bold mb-4"&gt;Your Path to &lt;span class="text-coral"&gt;Viral Power!&lt;/span&gt;&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-600"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Ready to banish camera jitters and conquer your content dreams? This isn't just a worksheet; it's your interactive launchpad to fame. Let's unlock your true potential together!</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Section 1: Conquering the Camera --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="camera" class="mb-16 md:mb-24 scroll-mt-20"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-3xl md:text-4xl font-bold text-center mb-2"&gt;📸 Section 1: Camera Confidence&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-center text-gray-500 mb-12 max-w-2xl mx-auto"&gt;Feeling shy? Totally normal! Confidence is a skill, and this is your personal bootcamp. No judgment, just pure growth. Let's start by getting real with ourselves.&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid md:grid-cols-2 gap-8 items-start"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card p-6 md:p-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h4 class="font-bold text-xl mb-4"&gt;🤔 Your Honest Reflection&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="mb-4"&gt;What's the *scariest* thing about hitting 'record' right now? Let it out!&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;textarea id="reflectionQuestion" class="w-full h-32 p-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-teal focus:border-teal transition" placeholder="Be honest, no one's watching..."&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card p-6 md:p-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h4 class="font-bold text-xl mb-4"&gt;🚀 The "Practice Makes Perfect" Challenge&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="mb-4"&gt;Your mission: Record yourself daily for a week. No posting required! Just talk to the camera. Check off each day to track your progress.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div id="practice-log" class="space-y-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;!-- JS will populate this --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card p-6 md:p-8 mt-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h4 class="font-bold text-xl mb-4 text-center"&gt;💡 My Camera Hacks Checklist&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="grid md:grid-cols-3 gap-6 text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-peach p-4 rounded-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h5 class="font-semibold text-lg mb-2"&gt;🙈 Hide the Screen&lt;/h5&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-sm text-gray-700"&gt;Focus on the lens, not your reflection. This makes it feel more like a conversation!&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-peach p-4 rounded-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h5 class="font-semibold text-lg mb-2"&gt;👋 Talk to a Bestie&lt;/h5&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-sm text-gray-700"&gt;Pretend you're sending a video to your favorite person. Instant chill vibes guaranteed.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="bg-peach p-4 rounded-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h5 class="font-semibold text-lg mb-2"&gt;💯 Be 100% YOU&lt;/h5&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-sm text-gray-700"&gt;Authenticity is magnetic. Trying to be someone else is draining. Let your true self shine!&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Section 2: No One Cares --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="no-one-cares" class="mb-16 md:mb-24 scroll-mt-20"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-3xl md:text-4xl font-bold text-center mb-2"&gt;🤫 Section 2: The "No One Cares" Blueprint&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-center text-gray-500 mb-12 max-w-2xl mx-auto"&gt;Worried about what people will think? Here's a secret: they're too busy worrying about themselves! Embracing this is your creative superpower.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid md:grid-cols-2 gap-8 items-start"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card p-6 md:p-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h4 class="font-bold text-xl mb-4"&gt;📝 My Biggest Fear Is...&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="mb-4"&gt;When I think about posting online, I'm most scared of...&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;input type="text" id="biggestFear" class="w-full p-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-coral focus:border-coral transition" placeholder="...what my friends might say?"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="card p-6 md:p-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h4 class="font-bold text-xl mb-4"&gt;✅ My Mindset Shift Checklist&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="mb-4"&gt;Internalize these truths. Check them off when you truly believe them.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul class="space-y-3" id="mindset-checklist"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-center"&gt;&lt;input type="checkbox" id="mindsetShift_1" class="h-5 w-5 rounded mr-3 accent-coral"&gt;&lt;span class="interactive-checklist-item"&gt;Everyone started somewhere (even the stars!).&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-center"&gt;&lt;input type="checkbox" id="mindsetShift_2" class="h-5 w-5 rounded mr-3 accent-coral"&gt;&lt;span class="interactive-checklist-item"&gt;Ups &amp; downs are normal, not a sign to quit.&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-center"&gt;&lt;input type="checkbox" id="mindsetShift_3" class="h-5 w-5 rounded mr-3 accent-coral"&gt;&lt;span class="interactive-checklist-item"&gt;I choose growth over the regret of not trying.&lt;/span&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Section 3: Your Unstoppable Why --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="why" class="scroll-mt-20"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 class="text-3xl md:text-4xl font-bold text-center mb-2"&gt;🌟 Section 3: Your Unstoppable WHY!&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-center text-gray-500 mb-12 max-w-2xl mx-auto"&gt;The journey has lows. Your "Why" is the fuel that will push you through them. Let's define your ultimate motivation and track your epic consistency!&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card p-6 md:p-8 mb-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                 </span>&lt;h4 class="font-bold text-xl mb-4"&gt;✍️ My Dream Life Vision&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                 </span>&lt;div class="grid md:grid-cols-3 gap-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label class="font-semibold block mb-2"&gt;If I had a massive following, I could...&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;textarea id="dreamLifeVision_1" class="w-full h-32 p-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-teal focus:border-teal transition" placeholder="...travel the world, quit my job, help others..."&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label class="font-semibold block mb-2"&gt;My brand will change my life by...&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;textarea id="dreamLifeVision_2" class="w-full h-32 p-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-teal focus:border-teal transition" placeholder="...giving me freedom, connecting me with amazing people..."&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                     </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;label class="font-semibold block mb-2"&gt;The #1 thing I want to accomplish is...&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;textarea id="dreamLifeVision_3" class="w-full h-32 p-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-teal focus:border-teal transition" placeholder="...building a community, sharing my passion..."&gt;&lt;/textarea&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                 </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="card p-6 md:p-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;h4 class="font-bold text-xl text-center mb-2"&gt;📈 My Consistency Crew Tracker&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-center text-gray-500 mb-6"&gt;Aim for 3 months of consistent posting. Each week you post, click the button below to fill your progress bar. Watch your efforts stack up!&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="chart-container mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;canvas id="consistencyChart"&gt;&lt;/canvas&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="text-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button id="addWeekButton" class="bg-coral text-white font-bold py-3 px-8 rounded-full hover:bg-opacity-90 transition-transform hover:scale-105"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>I Posted This Week! (+1)</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button id="resetChartButton" class="bg-gray-300 text-gray-700 font-bold py-3 px-6 rounded-full hover:bg-opacity-90 transition-transform hover:scale-105 ml-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>Reset</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer class="text-center py-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="text-2xl font-bold"&gt;✨ You've Got This, Creator! ✨&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="text-gray-600 mt-2"&gt;Keep practicing, keep believing, and keep showing up. The world is waiting for YOU. Go create magic! 🚀&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">document.addEventListener('DOMContentLoaded', function () {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Mobile Menu</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const mobileMenuButton = document.getElementById('mobile-menu-button');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const mobileMenu = document.getElementById('mobile-menu');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>mobileMenuButton.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>mobileMenu.classList.toggle('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>mobileMenu.classList.toggle('flex');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('#mobile-menu a').forEach(link =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>link.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>mobileMenu.classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>mobileMenu.classList.remove('flex');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Auto-save functions</p>
+<p class="p1"><span class="Apple-converted-space">    </span>function saveState() {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const state = {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>reflectionQuestion: document.getElementById('reflectionQuestion').value,</p>
+<p class="p1"><span class="Apple-converted-space">            </span>biggestFear: document.getElementById('biggestFear').value,</p>
+<p class="p1"><span class="Apple-converted-space">            </span>dreamLifeVision_1: document.getElementById('dreamLifeVision_1').value,</p>
+<p class="p1"><span class="Apple-converted-space">            </span>dreamLifeVision_2: document.getElementById('dreamLifeVision_2').value,</p>
+<p class="p1"><span class="Apple-converted-space">            </span>dreamLifeVision_3: document.getElementById('dreamLifeVision_3').value,</p>
+<p class="p1"><span class="Apple-converted-space">            </span>postedWeeks: window.postedWeeks, // Access the global variable</p>
+<p class="p1"><span class="Apple-converted-space">            </span>practiceLog: [],</p>
+<p class="p1"><span class="Apple-converted-space">            </span>mindsetShift: [],</p>
+<p class="p1"><span class="Apple-converted-space">        </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Save practice log checkboxes</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.querySelectorAll('#practice-log input[type="checkbox"]').forEach((checkbox, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>state.practiceLog.push(checkbox.checked);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>// Save mindset shift checkboxes</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.querySelectorAll('#mindset-checklist input[type="checkbox"]').forEach((checkbox, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>state.mindsetShift.push(checkbox.checked);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>localStorage.setItem('tiktokMindsetSPAState', JSON.stringify(state));</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function loadState() {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const savedState = localStorage.getItem('tiktokMindsetSPAState');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (savedState) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const state = JSON.parse(savedState);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('reflectionQuestion').value = state.reflectionQuestion || '';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('biggestFear').value = state.biggestFear || '';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('dreamLifeVision_1').value = state.dreamLifeVision_1 || '';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('dreamLifeVision_2').value = state.dreamLifeVision_2 || '';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('dreamLifeVision_3').value = state.dreamLifeVision_3 || '';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Load practice log checkboxes</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('#practice-log input[type="checkbox"]').forEach((checkbox, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (state.practiceLog[index] !== undefined) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>checkbox.checked = state.practiceLog[index];</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>checkbox.dispatchEvent(new Event('change')); // Trigger change to update styling</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Load mindset shift checkboxes</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('#mindset-checklist input[type="checkbox"]').forEach((checkbox, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (state.mindsetShift[index] !== undefined) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>checkbox.checked = state.mindsetShift[index];</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>checkbox.dispatchEvent(new Event('change')); // Trigger change to update styling</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>window.postedWeeks = state.postedWeeks || 0; // Set global variable</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Initialize/Load state on page load</p>
+<p class="p1"><span class="Apple-converted-space">    </span>loadState();</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Section 1: Practice Log</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const practiceLogContainer = document.getElementById('practice-log');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>for (let i = 1; i &lt;= 7; i++) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const div = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>div.className = 'flex items-center bg-gray-100 p-3 rounded-lg';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>div.innerHTML = `</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;input type="checkbox" id="day-${i}" class="h-5 w-5 rounded mr-3 accent-teal"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="day-${i}" class="flex-grow interactive-checklist-item"&gt;Day ${i}: Practice Session&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>`;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>practiceLogContainer.appendChild(div);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Checklist item styling and save</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('.interactive-checklist-item').forEach(item =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const checkbox = item.previousElementSibling;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>checkbox.addEventListener('change', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>item.classList.toggle('completed', checkbox.checked);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>saveState(); // Save state on checkbox change</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const mindsetChecklist = document.getElementById('mindset-checklist');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>mindsetChecklist.querySelectorAll('input[type="checkbox"]').forEach(checkbox =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>checkbox.addEventListener('change', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>checkbox.nextElementSibling.classList.toggle('completed', checkbox.checked);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>saveState(); // Save state on checkbox change</p>
+<p class="p1"><span class="Apple-converted-space">        </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Text input auto-save</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('reflectionQuestion').addEventListener('input', saveState);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('biggestFear').addEventListener('input', saveState);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('dreamLifeVision_1').addEventListener('input', saveState);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('dreamLifeVision_2').addEventListener('input', saveState);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.getElementById('dreamLifeVision_3').addEventListener('input', saveState);</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>// Section 3: Consistency Chart</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const ctx = document.getElementById('consistencyChart').getContext('2d');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const totalWeeks = 12;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>window.postedWeeks = window.postedWeeks !== undefined ? window.postedWeeks : 0; // Initialize or load</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const chartLabels = Array.from({ length: totalWeeks }, (_, i) =&gt; `W${i + 1}`);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const chartData = {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>labels: chartLabels,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>datasets: [{</p>
+<p class="p1"><span class="Apple-converted-space">            </span>label: 'Weeks Posted',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>data: Array(totalWeeks).fill(0),</p>
+<p class="p1"><span class="Apple-converted-space">            </span>backgroundColor: (context) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const index = context.dataIndex;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>return index &lt; window.postedWeeks ? '#4ECDC4' : '#E5E7EB';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>borderColor: '#FFF',</p>
+<p class="p1"><span class="Apple-converted-space">            </span>borderWidth: 2,</p>
+<p class="p1"><span class="Apple-converted-space">            </span>borderRadius: 5,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}]</p>
+<p class="p1"><span class="Apple-converted-space">    </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const consistencyChart = new Chart(ctx, {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>type: 'bar',</p>
+<p class="p1"><span class="Apple-converted-space">        </span>data: chartData,</p>
+<p class="p1"><span class="Apple-converted-space">        </span>options: {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>responsive: true,</p>
+<p class="p1"><span class="Apple-converted-space">            </span>maintainAspectRatio: false,</p>
+<p class="p1"><span class="Apple-converted-space">            </span>plugins: {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>legend: {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>display: false,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                </span>tooltip: {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>enabled: false</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>},</p>
+<p class="p1"><span class="Apple-converted-space">            </span>scales: {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>y: {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>display: false,</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>beginAtZero: true,</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>max: 1,</p>
+<p class="p1"><span class="Apple-converted-space">                </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                </span>x: {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>grid: {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>display: false,</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
+<p class="p1"><span class="Apple-converted-space">                     </span>ticks: {</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>font: {</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>size: 10</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>const addWeekButton = document.getElementById('addWeekButton');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const resetChartButton = document.getElementById('resetChartButton');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function updateChart() {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>consistencyChart.data.datasets[0].data = Array(totalWeeks).fill(0).map((_, i) =&gt; i &lt; window.postedWeeks ? 1 : 0);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>consistencyChart.update();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>saveState(); // Save state after chart update</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>addWeekButton.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (window.postedWeeks &lt; totalWeeks) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>window.postedWeeks++;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>updateChart();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>resetChartButton.addEventListener('click', () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>window.postedWeeks = 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>updateChart();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>});</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>updateChart(); // Initial chart update after loading state</p>
+<p class="p1">});</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
